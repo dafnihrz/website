@@ -12,7 +12,7 @@
 	h1,footer {
 		text-align: center;
 	}
-	footer a, footer a :visited{
+	footer a, footer a:visited, footer a:hover{
 		color: #A50;
 		text-decoration: none;
 		padding: 10px;
@@ -26,8 +26,8 @@
 	}
 
 	section#gridexample > main {
-		margin-left: 12vw;
-		margin-right: 12vw;
+		margin-left: 15vw;
+		margin-right: 15vw;
 		display: grid;
 		grid-template-columns: 20vw 20vw 20vw;
 		grid-template-rows: auto;
@@ -44,12 +44,20 @@
 		font-weight: bold;
 		font-family: sans-serif;
 	}
+	section a{
+	color: white;
+	text-decoration: none;	
+	}
+	section a:hover{
+		color:darkblue
+	}
+
 </style>
 </head>
 
 <body>
 
-<h1>Welcome to My Website</h1>
+<h1 style="font-family: sans-serif;">Welcome to My Website</h1>
 <p style="text-align: center;">
 	Alo, I'm Dafni :D
 </p>
@@ -59,18 +67,18 @@
 	because this simple page was a real <del>struggle</del> breeze :)
 </p>
 <section id="gridexample">
-<h2>Navigation</h2>
+<h2>Classwork</h2>
 <main>
 <div> <a href="cupcake.html">Cupcakes</a></div>
 <div>HTML</div>
 <div>CSS</div>
 </main>
 </section>
-
+</div>
 </body>
 <br>
 <br>
-<footer>
+<footer style="font-family:monospace;">
 	<a href="http://validator.w3.org/check/referer">
 	<strong> HTML </strong> Valid! </a>
 	<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">

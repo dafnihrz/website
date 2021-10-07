@@ -7,7 +7,7 @@
 	body{
 		margin: 25px;
 		padding: 10px;
-		border: 1px #BBB;
+		border: 20px outset #BBB;
 	}
 	h1,footer {
 		text-align: center;
@@ -19,7 +19,31 @@
 		border: 1px dashed #000;
 
 	}
+	section#gridexample > h2 {
+		font-family: verdana;
+		text-align: center;
+		font-size: 2.5vw;
+	}
 
+	section#gridexample > main {
+		margin-left: 3.5vw;
+		margin-right: 3.5vw;
+		display: grid;
+		grid-template-columns: 30vw 30vw 30vw;
+		grid-template-rows: auto;
+		grid-gap: 1vw;
+	}
+	section#gridexample > main  > div {
+		text-align: center;
+		background-color: #78467B;
+		border: 5px solid #583770;
+		color: #FFF;
+		border-radius: 0.5vw;
+		padding: 3vw;
+		font-size: 4vw;
+		font-weight: bold;
+		font-family: sans-serif;
+	}
 </style>
 </head>
 
@@ -34,9 +58,16 @@
 	This is where you can find the lessons I've completed. I don't have much to say except that I hope you're impressed with my progress
 	because this simple page was a real <del>struggle</del> breeze :)
 </p>
+<section id="gridexample">
+<h2>Navigation</h2>
+<main>
+<div> Cupcakes</div>
+<div>HTML</div>
+<div>CSS</div>
+</main>
+</section>
+
 </body>
-
-
 <br>
 <br>
 <footer>

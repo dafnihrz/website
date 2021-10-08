@@ -3,9 +3,26 @@
 <meta charset="utf-8">
 <head>
     <title>Getting Down With HTML</title>
+    <style>
+        body{
+            margin: 20px;
+            padding: 10px;
+        }
+        h1,h2{
+            text-align: center;
+            font-family: sans-serif;
+        }
+        footer a, footer a:visited, footer a:hover{
+            color: #a50;
+            text-decoration: none;
+            padding: 10px;
+            border: 1px dashed #000;
+        }
+    </style>
 </head>
 <body>
     <h1>Block-Level Elements</h1>
+    <hr>
     <h2>Text in a Preformatted Element</h2>
     <pre>This             text
 
@@ -17,7 +34,7 @@
 
 whitespace.
 </pre>
-<p style="color: gray;">I see text with a lotta extra whitespace.</p>
+<p style="font-family: sans-serif;color:gray;font-size: 14px;">I see text with a lotta extra whitespace.</p>
 <h2>Same Text in a Paragraph Element</h2>
 <p>This             text
 
@@ -29,13 +46,12 @@ of         extra
 
 whitespace.
 </p>
-<p style="color: gray;">I see that the text doesn't include the extra whitespace.</p>
+<p style="font-family: sans-serif;color:gray;font-size: 14px;">I see that the text doesn't include the extra whitespace.</p>
 <div>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </div>
 </body>
-
-
+<div style="padding: 50px"></div>
 </html>
 <footer style="text-align: center;">
     <a href="http://validator.w3.org/check/referer">

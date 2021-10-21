@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <title>Getting Down With HTML</title>
 <style>
+    @import url(footer.css);
         body{
             margin: 30px;
             padding: 20px;
@@ -13,12 +14,6 @@
         h1,h2{
             text-align: center;
             font-family: sans-serif;
-        }
-        footer a, footer a:visited, footer a:hover{
-            color: #a50;
-            text-decoration: none;
-            padding: 10px;
-            border: 1px dashed #000;
         }
         table{
             font-family: sans-serif;
@@ -79,12 +74,12 @@
     </tr>
 </table>
 
-<footer  style="text-align: center;">
-        <a href="http://validator.w3.org/check?uri=https://dafnihrz.github.io/website/html/mytable">
-        <strong> HTML </strong> Valid! </a>
-        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://dafnihrz.github.io/website/html/mytable?profile=css3">
-        <strong> CSS </strong> Valid! </a>
-        <div style="padding: 20px;"></div>
+<footer id="vLinks" style="text-align: center;">
+    <script src="footer.js"></script>
 </footer>
+<div style="text-align:center;">
+    <button class="button" onclick="document.location='index'"><span>Home
+    </span></button>
+</div>
 </body>
 </html>

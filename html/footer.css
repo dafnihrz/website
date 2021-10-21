@@ -1,17 +1,13 @@
-.button a, .button a :visited{
-  text-decoration: none;
-  color: #a50;
-}
 .button {
   margin-top: 20px;
   background-color: white;
   border: 1px dashed black;
-  color: black;
+  color: #a50;
   text-align: center;
   padding: 10px;
   transition: all 0.5s;
   cursor: pointer;
-
+  text-decoration: none;
 }
 
 .button span {

@@ -3,7 +3,7 @@
   color: #a50;
 }
 .button {
-  margin-top: 10px;
+  margin-top: 30px;
   background-color: white;
   border: 1px dashed black;
   color: black;
@@ -45,6 +45,6 @@
     border: 1px dashed #000;
 }
 footer{
-    margin-top: 100px;
+    margin-top: 20px;
 }
         

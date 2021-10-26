@@ -1,41 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="utf-8">
+<title>Getting Down With HTML</title>
 <style>
-body{
-	text-align: center;
-    font-family: sans-serif;
-}
-.nav {
-  list-style-type: none;
-  text-align: center;
-
-}
-
-.nav h2 {
-  display: inline-block;
-  font-size: 20px;
-  border: 5px dashed lavender;
-  margin: 20px;
-  padding: 10px;
-  width: 200px;
-}
-
+    
+    body{
+        font-family: sans-serif;
+        margin: 20px;
+        padding: 10px;
+    }
+    h1, footer{
+	    text-align:center;
+        font-family: sans-serif;
+        
+    }
+    table{
+    	margin-left: 50px;
+        margin-right: 50px;
+		width: 90%;
+        border-spacing: 20px;
+    }
+    th{
+        border: 5px dashed lavender;
+        padding: 10px;
+        width: 200px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    footer a, footer a:visited, footer a:hover{
+		color: #A50;
+		text-decoration: none;
+		padding: 10px;
+	}
+    td a{
+        text-decoration: none;
+        color: #000;
+    }
+    li {
+        margin-left: 1vw;
+        text-align: left;
+        text-decoration: none;   
+    }
+    li a:hover{
+        color: darkblue;
+        font-weight: bold;
+    }
+    
 </style>
 </head>
+
 <body>
+<h1>Getting Down With HTML Exercises</h1>
+<table>
+    <tr>
+        <th>Elements</th>
+        <th>Lists</th>
+        <th>Tables</th>
+        <th>Links</th>
+        <th>Images</th>
+    </tr>
+    <tr>
+        <td><li><a href="block">Block-Level Elements</a></li></td>
+        <td><li><a href="ordered">Ordered</a></li></td>
+        <td><li><a href="decbinocthex">Decimal, Binary, Octal, Hex</a></li></td>
+        <td><li><a href="favorite">Favorite Websites</a></li></td>
+        <td><li><a href="gallery1">Gallery I</a></li></td>
+    </tr>
+    <tr>
+        <td><li><a href="inline">Inline Elements</a></li></td>
+        <td><li><a href="unordered">Unordered</a></li></td>
+        <td><li><a href="mytable">My Table</a></li></td>
+        <td></td>
+        <td><li>Gallery II</li></td>
+    </tr>
+    <tr>
+        <td><li><a href="object">Object Elements</a></li></td>
+        <td><li><a href="description">Description</a></li></td>
+    </tr>
+    <tr>
+        <td><li><a href="special">Special Characters</a></li></td>
+        <td><li><a href="nested">Nested</a></li></td>
+    </tr>
+</table>
 
-<h1>Getting Down With HTML</h1>
-
-<ol class="nav">
-  <h2><li>Elements
-      <li>ur mum</li>
-  </li></h2>
-  <h2><li>Lists</li></h2>
-  <h2><li>Tables</li></h2>
-  <h2><li>Links</li></h2>
-  <h2><li>Images</li></h2>
-</ol>
 </body>
-</html>
 
+<footer>
+    <a href="http://validator.w3.org/check?uri=https://dafnihrz.github.io/website/testpage">
+        <strong> HTML </strong> Valid! </a>
+    <a href="https://dafnihrz.github.io/website">Home</a>
+	<a href="https://jigsaw.w3.org/css-validator/validator?uri=https://dafnihrz.github.io/website/html?profile=css3">
+	<strong> CSS </strong> Valid! </a>
+</footer>
+</html>

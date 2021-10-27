@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Getting Down With HTML</title>
+<style>
+    @import url(footer.css);
+        body{
+            margin: 30px;
+            padding: 20px;
+            line-height: 2;
+        }
+        h1{
+            text-align: center;
+            font-family: sans-serif;
+        }
+        footer a, footer a:visited, footer a:hover{
+            color: #a50;
+            text-decoration: none;
+            padding: 10px;
+            border: 1px dashed #000;
+        }
+        footer{
+            margin-top: 70px;
+        }
+        div.gallery{
+            padding: 5px;
+            display: inline-block;
+        }
+        div.gallery img{
+            width: 350px;
+            height: auto;
+        }
+</style>
+</head>
+<body>
+
+<h1>Gallery 1</h1>
+<hr>
+<h3 style="font-family: sans-serif;">Some pictures I took</h3>
+<div class="gallery">
+    <img src="http://www.openbookproject.net/multimedia/paulcardunergraphics/architecture/large/mirrors.jpg" alt="Mirrors">
+</div>
+<div class="gallery">
+    <img src="http://www.openbookproject.net/multimedia/paulcardunergraphics/landscape/large/sandydunes.jpg" alt="Sandy Dunes">
+</div>
+<div class="gallery">
+    <img src="http://www.openbookproject.net/multimedia/paulcardunergraphics/architecture/large/gugenheim.jpg" alt="Gugenheim">
+</div>
+<div class="gallery">
+    <img src="http://www.openbookproject.net/multimedia/paulcardunergraphics/architecture/large/wall.jpg" alt="Wall">
+</div>
+<div class="gallery">
+    <img src="http://www.openbookproject.net/multimedia/paulcardunergraphics/abstract/large/zongowater.jpg" alt="Zongo Water">
+</div>
+
+<footer id="vLinks" style="text-align: center;">
+    <script src="footer.js"></script>
+</footer>
+<div style="text-align:center;">
+    <button class="button" onclick="document.location='index'"><span>Home
+    </span></button>
+</div>
+</body>
+</html>

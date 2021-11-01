@@ -9,6 +9,47 @@
 
 <h1>Order</h1>
 <hr>
+<p>Craving cupcakes? Order here!</p>
+<form method="GET"
+action="">
+<fieldset>
+<legend>Order Info</legend>
+<label>First Name: <input type="text" name="fname" size="30"></label><br>
+<label>Last Name:  <input type="text" name="lname" size="30"></label>
+</fieldset>
+
+<fieldset>
+<legend>Make A Cupcake</legend>
+<label>Frosting:</label><br>
+<input type="radio" name="flavor" value="redvelvet"> Red Velvet<br>
+<input type="radio" name="flavor" value="vanilla" checked> Vanilla<br> 
+<input type="radio" name="flavor" value="chocolate"> Chocolate<br>
+<input type="radio" name="flavor" value="coconut"> Coconut<br>
+<label>Toppings:</label><br>
+<input type="checkbox" name="sprinkles" value="1"> Sprinkles<br>
+<input type="checkbox" name="freshfruit" value="1"> Fresh Fruit<br>
+<input type="checkbox" name="chocolatechips" value="1"> Chocolate Chips<br>
+<input type="checkbox" name="coconutflakes" value="1"> Coconut Flakes<br>
+<input type="checkbox" name="hersheysyrup" value="1"> Hershey's Syrup<br>
+<label>Size:</label><br>
+<select name="size">
+	<option>Small</option>
+	<option>Regular</option>
+	<option>Large</option>
+	<option>Jumbo</option>
+</select>
+<br>
+<label>Quantity</label><br>
+<select  name="quantity">
+	<option>4</option>
+	<option>6</option>
+	<option>8</option>
+	<option>10</option>
+</select>
+</fieldset>
+<br>
+<button type="submit">Submit my order :)</button>
+</form>
 
 <footer id="vLinks" style="text-align: center;">
     <script src="/website/html/footer.js"></script>

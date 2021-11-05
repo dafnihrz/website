@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<title>Getting Down With HTML</title>
 <meta charset="utf-8">
-<title>Dafni's Website</title>
 <style>
-    body{
-        margin-top: 100px;
-        margin-left: 100px;
-        margin-right: 100px;
-		border: 20px outset Lavender;
-    }
-	main{
-        padding: 100px;
-        display: grid;
-        grid-template-columns: 30vw 30vw 30vw;
-        grid-template-rows: auto;
-        grid-gap: 5vw;
-	}
-main a{
-	color: white;
-	text-align: center;
-	text-decoration: none;
-}
-main a:hover{
-	color: darkblue;
-}
-.box {
-    text-align: center;
-    background-color: lightsteelblue;
-    border: 5px solid lavender;
-    color: #FFF;
-    border-radius: 0.5vw;
-    padding: 5vw 7vw;
-    font-size: 5vw;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-footer{
-    text-align: center;
-    margin: 10px;
-    padding: 20px;
-    }
-footer a, footer a:visited, footer a:hover{
-	color: #A50;
-	text-decoration: none;
-	padding: 10px;
-	border: 1px dashed #000;
-}
+  @import url(homepage.css);
 </style>
 </head>
 <body>
-<main>
-<div class="box b"><a href="html">HTML</a></div>
-<div class="box c"><a href="css">CSS</a></div>
-</main>
-<footer style="font-family:monospace;">
-	<a href="http://validator.w3.org/check?uri=https://dafnihrz.github.io/website">
-	<strong> HTML </strong> Valid! </a>
-	<a href="https://jigsaw.w3.org/css-validator/validator?uri=https://dafnihrz.github.io/website?profile=css3">
+<h1>Getting Down With HTML Exercises</h1>
+<div class="row">
+  <div class="column">
+    <h3>Elements</h3>
+	<ul>
+    	<li><a href="block">Block-Level Elements</a></li>
+		<li><a href="inline">Inline Elements</a></li>
+        <li><a href="object">Object Elements</a></li>
+        <li><a href="special">Special Characters</a></li>
+    </ul>
+  </div>
+  
+  <div class="column">
+    <h3>Lists</h3>
+	<ul>
+    	<li><a href="ordered">Ordered</a></li>
+		<li><a href="unordered">Unordered</a></li>
+        <li><a href="description">Description</a></li>
+        <li><a href="nested">Nested</a></li>
+    </ul>
+  </div>
+  
+  <div class="column">
+    <h3>Tables</h3>
+	<ul>
+    	<li><a href="decbinocthex">Decimal, Binary, Hex</a></li>
+		<li><a href="mytable">My Table</a></li>
+    </ul>
+  </div>
+  
+    <div class="column">
+    <h3>Links</h3>
+	<ul>
+    	<li><a href="favorite">Favorite Websites</a></li>
+    </ul>
+  </div>
+  
+    <div class="column">
+    <h3>Images</h3>
+	<ul>
+    	<li><a href="gallery1">Gallery I</a></li>
+		<li><a href="gallery2">Gallery II</a></li>
+    </ul>
+  </div>
+</div>
+<footer>
+    <a href="http://validator.w3.org/check?uri=https://dafnihrz.github.io/website/html">
+    <strong> HTML </strong> Valid! </a>
+    <a href="https://dafnihrz.github.io/website">Home</a>
+	<a href="https://jigsaw.w3.org/css-validator/validator?uri=https://dafnihrz.github.io/website/html?profile=css3">
 	<strong> CSS </strong> Valid! </a>
-  </footer>
+</footer>
 </body>
 </html>

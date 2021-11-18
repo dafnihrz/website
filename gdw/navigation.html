@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dafni's Website</title>
+<style>
+@import url(footer.css);
+    body{
+        margin-left: 100px;
+        margin-right: 100px;
+		border: 20px outset Lavender;
+    }
+	main{
+        padding: 100px;
+        display: grid;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-template-rows: auto;
+        grid-gap: 5vw;
+	}
+main a{
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+main a:hover{
+	color: darkblue;
+}
+.box {
+    text-align: center;
+    background-color: lightsteelblue;
+    border: 5px solid lavender;
+    color: #FFF;
+    border-radius: 0.5vw;
+    padding: 5vw 7vw;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    }
+footer a, footer a:visited, footer a:hover{
+	color: #A50;
+	text-decoration: none;
+	padding: 10px;
+	border: 1px dashed #000;
+}
+</style>
+</head>
+<body>
+<main>
+<div class="box b"><a href="gdw">HTML</a></div>
+<div class="box c"><a href="css">CSS</a></div>
+</main>
+<footer id="vLinks">
+    <script src="/website/footer.js"></script>
+    <div style="margin-top: 8px;">
+        <button class="button" onclick="document.location='index'"><span>Home
+        </span></button>
+    </div>
+</footer>
+</body>
+</html>

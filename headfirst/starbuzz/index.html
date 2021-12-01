@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Starbuzz Coffee</title>
+<meta charset="utf-8">
+<style>
+  @import url(/website/gdw/footer.css);
+  *{
+    box-sizing: border-box;
+  }
+  body {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 2px dotted black;
+    padding: 20px;
+    font-family: sans-serif;
+  }
+  .row{
+      margin-left: 100px;
+      margin-right: 100px;
+  }
+  .column {
+    float: left;
+    width: 500px;
+    padding: 10px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column h2, p{
+    margin-left: 100px;
+  }
+</style>
+</head>
+<body>
+<h1>Starbuzz Coffee Beverages</h1>
+<a href="/website/headfirst/starbuzz/mission">Our Mission</a>
+<h2 style="text-align: center;">Menu</h2>
+<hr style="width: 30%;text-align: center;">
+<div class="row">
+    <div class="column">
+            <h2>House Blend, $1.49</h2>
+            <p>A smooth, mild blend of coffees from Mexico, Bolivia
+            and Guatemala.</p><br>
+            <h2>Mocha Cafe Latte, $2.35</h2>
+            <p>Espresso, steamed milk and chocolate syrup.</p>
+        </div>
+    <div class="column">
+            <h2>Cappuccino, $1.89</h2>
+            <p>A mixture of espresso, steamed milk and foam.</p><br>
+            <h2>Chai Tea, $1.85</h2>
+            <p>A spicy drink made with black tea, spices, milk and honey.</p>
+        </div>
+</div>
+<footer id="vLinks" style="margin-top: 60px;">
+    <script src="/website/footer.js"></script>
+    <div style="margin-top: 9px;">
+        <button class="button" onclick="document.location='index'"><span>Home
+        </span></button>
+    </div>
+</footer>
+</body>
+</html>

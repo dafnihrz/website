@@ -11,7 +11,7 @@
   body {
     margin-left: 50px;
     margin-right: 50px;
-    padding: 10px;
+    padding: 5px;
     font-family: sans-serif;
     text-align: center;
   }
@@ -19,11 +19,15 @@
     line-height: 50px;
     margin-bottom: 5px;
   }
-   h3{
+  .column {
+    width: 25%;
+    padding: 15px;
+  }
+  .column h3{
+    text-align: center;
     border: 5px dashed lavender;
-    padding: 13px;
+    padding: 10px;
     margin-bottom: 25px;
-    width: 35%;
   }
   li{
     text-align: left;
@@ -39,6 +43,11 @@
     color: darkblue;
     font-weight: bold;
   }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   footer{
     margin-top: 100px;
   }
@@ -47,27 +56,38 @@
     text-decoration: none;
     padding: 10px;
   }
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+  }
 </style>
 </head>
 <body>
-    <h1>Projects</h1>
-    <br>
+<h1>Projects</h1>
+<div class="row">
+  <div class="column">
     <h3>Projects</h3>
-    <ul>
-        <li><a href="/website/cupcake">Cupcake Website</a></li>
+	<ul>
+    	<li><a href="cupcake">Cupcake</a></li>
     </ul>
-    <br>
+  </div>
+  <div class="column">
     <h3>Experiments and Mini-Projects</h3>
-    <ul>
-        <li><a href="navidad">Navidad</a></li>
+	<ul>
+    	<li><a href="navidad">Navidad</a></li>
     </ul>
-
-    <footer>
-        <a href="http://validator.w3.org/check?uri=https://dafnihrz.github.io/website/headfirst">
-        <strong> HTML </strong> Valid! </a>
-        <a href="https://dafnihrz.github.io/website">Home</a>
-        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://dafnihrz.github.io/website/headfirst?profile=css3">
-        <strong> CSS </strong> Valid! </a>
-    </footer>
+  </div>
+</div>
+<footer>
+    <a href="http://validator.w3.org/check?uri=https://dafnihrz.github.io/website/projects">
+    <strong> HTML </strong> Valid! </a>
+    <a href="https://dafnihrz.github.io/website">Home</a>
+	<a href="https://jigsaw.w3.org/css-validator/validator?uri=https://dafnihrz.github.io/website/projects?profile=css3">
+	<strong> CSS </strong> Valid! </a>
+</footer>
 </body>
 </html>

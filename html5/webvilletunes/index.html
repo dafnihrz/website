@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Minimal Page</title>
+<title>Webville Tunes</title>
 <style>
 footer {
     text-align: center;
@@ -13,9 +13,16 @@ footer>a, footer>a:visited {
     color: #555;
 }
 </style>
+<script src="playlist.js"></script>
+<link rel="stylesheet" href="playlist.css">
 </head>
 <body>
-
+    <form>
+        <input type="text" id="songTextInput" size="40" placeholder="Song name">
+        <input type="button" id="addButton" value="Add Song">
+        </form>
+        <ul id="playlist">
+        </ul>
 <footer>
 <a id="vLink1"><strong> HTML </strong> Valid! </a> |
 <a href="https://dafnihrz.github.io/website">Home</a> |

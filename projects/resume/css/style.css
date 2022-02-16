@@ -108,7 +108,7 @@ li{
   left: calc((var(--date-block-width) + var(--decorator-horizontal-margin)));
   font-weight: 400;
   font-size: 11pt;
-  color: #555;
+  color: rgb(66, 41, 206);
 }
 
 #main h2 > i{
@@ -118,7 +118,7 @@ li{
   position: absolute;
   left: var(--main-blocks-title-icon-offset-left);
   z-index: 1; /* over decorator line */
-  color: #444;
+  color: rgb(74, 42, 187);
 }
 
 #main h2::after{ /* extends the decorator line */

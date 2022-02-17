@@ -45,6 +45,13 @@ h1{
     padding: 9px;
     
 }
+footer {
+      text-align: center;
+  }
+  footer>a, footer>a:visited, footer a{
+      text-decoration: none;
+      color: rgb(255, 254, 254);
+  }
 </style>
 </head>
 <body>
@@ -57,12 +64,18 @@ h1{
     </ul>
 <h1>Cupcakes</h1>
 
-<footer id="vLinks" style="text-align: center;">
-    <script src="/website/footer.js"></script>
-</footer>
-<div style="text-align:center;">
-    <button class="button" onclick="document.location='/website/projects'"><span>Home
-    </span></button>
-</div>
+<footer>
+    <a id="vLink1"><strong> HTML </strong> Valid! </a> |
+    <a href="https://dafnihrz.github.io/website/projects">Home</a> |
+    <a id="vLink2"><strong> CSS </strong> Valid! </a>
+    </footer>
+    <script>
+    var loc = window.location.href;
+    var HTMLvalidatorLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+    var CSSvalidatorLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                              loc + '?profile=css3';
+    document.getElementById("vLink1").setAttribute("href", HTMLvalidatorLinkStr);
+    document.getElementById("vLink2").setAttribute("href", CSSvalidatorLinkStr);
+    </script>
 </body>
 </html>

@@ -22,6 +22,12 @@ footer>a, footer>a:visited {
 <a id="vLink2"><strong> CSS </strong> Valid! </a>
 </footer>
 <script>
+    localStorage.setItem("sticky_0", "Pick up dry cleaning");
+    localStorage.setItem("sticky_1", "Cancel cable tv, who needs it now?");
+    var sticky = localStorage.getItem("sticky_0");
+    alert(sticky);
+</script>
+<script>
 var loc = window.location.href;
 var HTMLvalidatorLinkStr = 'http://validator.w3.org/check?uri=' + loc;
 var CSSvalidatorLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +

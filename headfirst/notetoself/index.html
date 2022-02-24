@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" href="notetoself.css">
+<script src="notetoself.js"></script>
 <title>Note To Self</title>
 <style>
 footer {
@@ -15,7 +17,12 @@ footer>a, footer>a:visited {
 </style>
 </head>
 <body>
-
+    <form>
+        <input type="text" id="note_text">
+        <input type="button" id="add_button" value="Add Sticky Note to Self">
+    </form>
+    <ul id="stickies">
+    </ul>
 <footer>
 <a id="vLink1"><strong> HTML </strong> Valid! </a> |
 <a href="../">Home</a> |

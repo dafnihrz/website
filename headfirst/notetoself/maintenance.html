@@ -15,14 +15,21 @@ footer>a, footer>a:visited {
     color: #555;
 }
 </style>
+<script>
+    window.onload = function() {
+    var clearButton = document.getElementById("clear_button");
+    clearButton.onclick = clearStorage;
+    }
+    function clearStorage() {
+    localStorage.clear();
+    }
+</script>
 </head>
-<body>
+    <body>
     <form>
-        <input type="text" id="note_text">
-        <input type="button" id="add_button" value="Add Sticky Note to Self">
+        <input type="button" id="clear_button" value="Clear storage" />
     </form>
-    <ul id="stickies"></ul>
-    
+
     <footer>
         <a id="vLink1"><strong> HTML </strong> Valid! </a> |
         <a href="../">Home</a> |

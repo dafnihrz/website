@@ -67,9 +67,6 @@
   }
 
   @media screen and (max-width:600px) {
-    html{
-      scale: 2;
-    }
     .column, div#column1, div#column2 {
       width: 100%;
     }

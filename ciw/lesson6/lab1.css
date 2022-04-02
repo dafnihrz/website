@@ -1,0 +1,52 @@
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 5px;
+    font-family: sans-serif;
+  }
+h1{
+    font-family: sans-serif;
+    text-align: center;
+}
+form {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+input[type=button], input[type=reset]{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: unset;
+    letter-spacing: 1.5px;
+    background-color: transparent;
+    padding: 11px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    -webkit-appearance: none;
+}
+input[type=button]:hover, input[type=reset]:hover{
+    background-color: white;
+    color: rgb(0, 161, 135);
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+div#form {
+    display: block;
+    text-align: center;
+    background-color: rgb(0, 161, 135);
+    border-radius: .2em;
+    filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.4));
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 50px;
+}
+@media screen and (max-width: 920px) {
+    div#form {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}

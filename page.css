@@ -18,6 +18,11 @@
     width: 250px;;
     padding: 15px;
   }
+  div#column1{
+    float: unset;
+    width: 35%;
+    padding: 15px;
+  }
   div#column2{
     float: unset;
     width: 35%;
@@ -65,7 +70,7 @@
     html{
       scale: 2;
     }
-    .column, div#column2 {
+    .column, div#column1, div#column2 {
       width: 100%;
     }
     footer{

@@ -4,7 +4,7 @@
 <title>Projects</title>
 <meta charset="utf-8">
 <style>
-* {
+  * {
     box-sizing: border-box;
   }
   
@@ -50,13 +50,21 @@
   }
   footer{
     margin-top: 100px;
+    color: #A50;
   }
-  footer a, footer a:visited, footer a:hover{
+  footer a, footer a:visited{
     color: #A50;
     text-decoration: none;
     padding: 10px;
   }
+  footer a:hover{
+    opacity: 0.5;
+  }
+
   @media screen and (max-width:600px) {
+    html{
+      scale: 2;
+    }
     .column {
       width: 100%;
     }
@@ -65,30 +73,37 @@
     }
   }
 </style>
+<!--<link rel="stylesheet" href="/homepage.css">-->
 </head>
 <body>
-<h1>Projects</h1>
-<div class="row">
-  <div class="column">
-    <h3>Projects</h3>
-	<ul>
-    	<li><a href="cupcake">Cupcake</a></li>
-      <li><a href="resume">Resume</a></li>
-    </ul>
+  <h1>Projects</h1>
+  <div class="row">
+    <div class="column">
+      <h3>Projects</h3>
+    <ul>
+        <li><a href="cupcake">Cupcake</a></li>
+        <li><a href="resume">Resume</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Experiments and Mini-Projects</h3>
+    <ul>
+        <li><a href="navidad">Navidad</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="column">
-    <h3>Experiments and Mini-Projects</h3>
-	<ul>
-    	<li><a href="navidad">Navidad</a></li>
-    </ul>
-  </div>
-</div>
-<footer>
-    <a href="http://validator.w3.org/check?uri=https://dafnihrz.github.io/website/projects">
-    <strong> HTML </strong> Valid! </a>
-    <a href="https://dafnihrz.github.io/website">Home</a>
-	<a href="https://jigsaw.w3.org/css-validator/validator?uri=https://dafnihrz.github.io/website/projects?profile=css3">
-	<strong> CSS </strong> Valid! </a>
-</footer>
+  <footer>
+    <a id="vLink1"><strong> HTML </strong> Valid! </a> |
+    <a href="..">Home</a> |
+    <a id="vLink2"><strong> CSS </strong> Valid! </a>
+  </footer>
+  <script>
+    var loc = window.location.href;
+    var HTMLvalidatorLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+    var CSSvalidatorLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                            loc + '?profile=css3';
+    document.getElementById("vLink1").setAttribute("href", HTMLvalidatorLinkStr);
+    document.getElementById("vLink2").setAttribute("href", CSSvalidatorLinkStr);
+  </script>
 </body>
 </html>

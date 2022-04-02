@@ -1,0 +1,92 @@
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 5px;
+    font-family: sans-serif;
+  }
+h1{
+    font-family: sans-serif;
+    text-align: center;
+}
+footer {
+    text-align: center;
+}
+footer>a, footer>a:visited {
+    text-decoration: none;
+    color: #555;
+}
+form {
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    font-weight: bold;
+}
+div#form1 input[type=button], div#form1 input[type=reset]{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: unset;
+    letter-spacing: 1.5px;
+    background-color: transparent;
+    padding: 11px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+div#form1 input[type=button]:hover, div#form1 input[type=reset]:hover{
+    background-color: white;
+    color: rgb(0, 161, 135);
+    cursor: pointer;
+}
+div#form1 {
+    display: block;
+    text-align: left;
+    background-color: rgb(0, 161, 135);
+    border-radius: .2em;
+    filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.4));
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 50px;
+}
+div#form2{
+    display: block;
+    text-align: center;
+    background-color: rgb(204, 81, 101);
+    border-radius: 1em;
+    filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.3));
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding: 30px;
+}
+div#form2 label{
+    border: 3px white solid;
+    padding: 0.5em 2ex 0.5em 1ex;
+    text-transform: uppercase;
+}
+div#form2 input[type="radio"]{
+    margin-bottom: 40px;
+}
+div#form2 input[type="button"] {
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(204, 81, 101);
+    border: unset;
+    border-radius: 5px;
+    padding: 0.5em 1.5ex 0.5em 1.5ex;
+    line-height: 1.6em;
+}
+div#form2 input[type="button"]:hover {
+    opacity: 0.5;
+}
+@media screen and (max-width: 920px) {
+    div#form1, div#form2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    div#form2{
+        padding: 30px;
+    }
+}

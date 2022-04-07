@@ -5,12 +5,41 @@
     <title>Lab 7-2</title>
     <script src="lesson6.js"></script>
     <link rel="stylesheet" href="lesson7.css">
+    <script>
+        var latlon = document.getElementById("test");
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                latlon.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+        function showPosition(position) {
+            latlon.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+        }
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    latlon.innerHTML = "User denied the request for Geolocation.";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    latlon.innerHTML = "Location information is unavailable.";
+                    break;
+                case error.TIMEOUT:
+                    latlon.innerHTML = "The request to get user location timed out.";
+                    break;
+                case error.UNKNOWN_ERROR:
+                    latlon.innerHTML = "An unknown error occurred.";
+                    break;
+            }
+        }
+    </script>
 </head>
 <body>
     <h1>Lab 7-2: The Geolocation API</h1>
     <hr>
     <p>Click the button to get your position.</p>
-    <button on click="getLocation()">My Location</button>
+    <button onclick="getLocation()">My Location</button>
     <p id="test"></p>
     <footer>
     <a id="vLink1"><strong> HTML </strong> Valid! </a> |

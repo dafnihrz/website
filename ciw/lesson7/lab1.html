@@ -5,13 +5,21 @@
     <title>Lab 7-1</title>
     <script src="lesson6.js"></script>
     <link rel="stylesheet" href="lesson7.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide_button").click(function () {
+                $("article").hide();
+            });
+        });
+    </script>
 </head>
 <body>
     <h1>Lab 7-1: Using jQuery in a Webpage</h1>
     <hr>
     <section>
         <button id="hide_button">Hide Articles</button>
-        <article>...</article>
+        <article>Hello, this is my article :)</article>
     </section>
     <footer>
     <a id="vLink1"><strong> HTML </strong> Valid! </a> |

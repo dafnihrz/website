@@ -8,46 +8,56 @@
 <body>
     <h1>Lab 8-1</h1>
     <hr>
-
     <article>
         <h2>Registration Form</h2>
         <form>
-            <p>
-                <label for="first">First name: </label>
-                <input type="text" name="firstname" id="first"/>
-            </p>
-            <p>
-                <label for="last">Last name: </label>
-                <input type="text" name="firstname" id="last"/>
-            </p>
-            <p>
-                <label for="db">Date of birth: </label>
-                <input type="date" name="dob" id="db">
-            </p>
-            <p>
-                <label for="cont">Your continent: </label>
-                <input list="continents" name="continent" id="cont"/>
-                <datalist id="continents">
-                    <option value="North America"></option>
-                    <option value="South America"></option>
-                    <option value="Europe"></option>
-                    <option value="Asia"></option>
-                    <option value="Africa"></option>
-                    <option value="Australia"></option>
-                    <option value="Antarctica"></option>
-                </datalist>
-            </p>
-            <p>
-                <label for="tech">How many technologies do you know?: </label>
-                <input type="range" name="technologies" min="0" max="50" value="25" id="tech"/> 10+
-            </p>
-            <p>
-                <label for="num">Age of user: </label>
-                <input type="number" name="age" min="1" max="100" id="num"/>
-            </p>
+            <fieldset name="personal_info">
+                <legend>Personal Information:</legend>
+                <p>
+                    <label for="first">First name: </label>
+                    <input type="text" name="firstname" id="first"/>
+                </p>
+                <p>
+                    <label for="last">Last name: </label>
+                    <input type="text" name="firstname" id="last"/>
+                </p>
+                <p>
+                    <label for="db">Date of birth: </label>
+                    <input type="date" name="dob" id="db">
+                </p>
+                <p>
+                    <label for="cont">Your continent: </label>
+                    <input list="continents" name="continent" id="cont"/>
+                    <datalist id="continents">
+                        <option value="North America"></option>
+                        <option value="South America"></option>
+                        <option value="Europe"></option>
+                        <option value="Asia"></option>
+                        <option value="Africa"></option>
+                        <option value="Australia"></option>
+                        <option value="Antarctica"></option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="join">Why do you want to join?</label>
+                </p>
+                <p>
+                    <textarea name="reason" placeholder="I want to join because..." maxlength="140" rows="3" cols="30" id="join"></textarea>
+                </p>
+            </fieldset>
+            <fieldset name="other_info">
+                <legend>Other Information: </legend>
+                <p>
+                    <label for="tech">How many technologies do you know?: </label>
+                    <input type="range" name="technologies" min="0" max="50" value="25" id="tech"/> 10+
+                </p>
+                <p>
+                    <label for="num">Age of user: </label>
+                    <input type="number" name="age" min="1" max="100" id="num"/>
+                </p>
+            </fieldset>
         </form>
     </article>
-
     <footer>
     <a id="vLink1"><strong> HTML </strong> Valid! </a> |
     <a href="..">Home</a> |

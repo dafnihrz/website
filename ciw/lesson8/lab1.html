@@ -8,6 +8,46 @@
 <body>
     <h1>Lab 8-1</h1>
     <hr>
+
+    <article>
+        <h2>Registration Form</h2>
+        <form>
+            <p>
+                <label for="first">First name: </label>
+                <input type="text" name="firstname" id="first"/>
+            </p>
+            <p>
+                <label for="last">Last name: </label>
+                <input type="text" name="firstname" id="last"/>
+            </p>
+            <p>
+                <label for="db">Date of birth: </label>
+                <input type="date" name="dob" id="db">
+            </p>
+            <p>
+                <label for="cont">Your continent: </label>
+                <input list="continents" name="continent" id="cont"/>
+                <datalist id="continents">
+                    <option value="North America"></option>
+                    <option value="South America"></option>
+                    <option value="Europe"></option>
+                    <option value="Asia"></option>
+                    <option value="Africa"></option>
+                    <option value="Australia"></option>
+                    <option value="Antarctica"></option>
+                </datalist>
+            </p>
+            <p>
+                <label for="tech">How many technologies do you know?: </label>
+                <input type="range" name="technologies" min="0" max="50" value="25" id="tech"/> 10+
+            </p>
+            <p>
+                <label for="num">Age of user: </label>
+                <input type="number" name="age" min="1" max="100" id="num"/>
+            </p>
+        </form>
+    </article>
+
     <footer>
     <a id="vLink1"><strong> HTML </strong> Valid! </a> |
     <a href="..">Home</a> |

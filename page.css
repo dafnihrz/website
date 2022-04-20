@@ -3,9 +3,9 @@
   }
   
   body {
-    margin-left: 50px;
-    margin-right: 50px;
     padding: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
     font-family: sans-serif;
     text-align: center;
   }
@@ -53,20 +53,21 @@
     display: table;
     clear: both;
   }
-  footer{
-    margin-top: 100px;
-    color: #A50;
+  footer {
+      width: 100%;
+      margin-top: 100px;
+      text-align: center;
+      color: #A50;
   }
-  footer a, footer a:visited{
-    color: #A50;
-    text-decoration: none;
-    padding: 10px;
+  footer a, footer a:visited {
+      text-decoration: none;
+      color: #A50;
   }
   footer a:hover{
     opacity: 0.5;
   }
 
-  @media screen and (max-width:600px) {
+  @media screen and (max-width:890px) {
     .column, div#column1, div#column2 {
       width: 100%;
     }

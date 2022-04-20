@@ -84,12 +84,18 @@ From the bottom of my heart.
 </div>
 </main>
 
-<footer id="vLinks" style="margin-top: 60px;">
-    <script src="/website/footer.js"></script>
-    <div style="margin-top: 9px;">
-        <button class="button" onclick="document.location='/website/projects/'"><span>Home
-        </span></button>
-    </div>
-</footer>
+<footer>
+    <a id="vLink1"><strong> HTML </strong> Valid! </a> |
+    <a href="..">Home</a> |
+    <a id="vLink2"><strong> CSS </strong> Valid! </a>
+    </footer>
+    <script>
+    var loc = window.location.href;
+    var HTMLvalidatorLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+    var CSSvalidatorLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                              loc + '?profile=css3';
+    document.getElementById("vLink1").setAttribute("href", HTMLvalidatorLinkStr);
+    document.getElementById("vLink2").setAttribute("href", CSSvalidatorLinkStr);
+    </script>
 </body>
 </html>

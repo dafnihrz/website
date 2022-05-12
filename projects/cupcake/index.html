@@ -1,76 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Cupcakes</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css"> 
+    <title>Cupcakes</title>
 <style>
-body{
-    background-attachment: fixed;
-    background-repeat: no-repeat; background-size: cover;
-    background-image: url("cupcakes.jpg");
-}
-h1{
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    margin: 100px;
-    padding: 120px;
-    font-size: 100px;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-}
-.nav {
-  list-style-type: none;
-  text-align: right;
-  margin: 0;
-  padding: 0;
-}
 
-.nav li {
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px;
-}
-.nav a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-size: 15px;
-    font-family: sans-serif;
-}
-.nav a:hover{
-    background-color: lavender;
-    padding: 9px;
-    
-}
-footer {
-      text-align: center;
+body, html {
+    height: 100%;
+    margin: 0;
   }
-  footer>a, footer>a:visited, footer a{
-      text-decoration: none;
-      color: rgb(255, 254, 254);
+  .background {
+    background-image: url('cupcakes.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+  #title{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 100px;
+    letter-spacing: 2px;
+  }
+  footer{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+a, a:visited {
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    transition: all ease-in-out 240ms;
+}
+a:hover{
+    opacity: 0.35;
+    cursor: pointer;
+}
+  .topright {
+    font-size: 12px;
+    text-transform: lowercase;
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  .middle {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 </style>
 </head>
 <body>
-    <ul class="nav">
-        <li><a href="menu">Menu</a></li>
-        <li><a href="order">Order</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="faq">FAQ</a></li>
-        <li><a href="contact">Contact</a></li>
-    </ul>
-<h1>Cupcakes</h1>
-
-<footer>
-    <a id="vLink1"><strong> HTML </strong> Valid! </a> |
-    <a href="https://dafnihrz.github.io/website/projects">Home</a> |
-    <a id="vLink2"><strong> CSS </strong> Valid! </a>
-    </footer>
-    <script>
+<div class="background">
+  <div class="bottomleft">
+  </div>
+  <div class="middle">
+    <h1 id="title">Cupcakes</h1>
+  </div>
+    <div class="navbar" id="myTopnav">
+        <div class="topnav-left">
+          <a class="active" href="..">← Back</a>
+        </div>
+        <div class="topnav">
+          <a href="gallery">Gallery</a>
+          <a href="bio">Bio</a>
+          <a href="contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
+  <footer>
+    <a id="vLink1">HTML Valid!</a> |
+    <a id="vLink2"> CSS Valid! </a>
+</footer>
+<script src="navbar.js"></script>
+  <script>
     var loc = window.location.href;
     var HTMLvalidatorLinkStr = 'http://validator.w3.org/check?uri=' + loc;
     var CSSvalidatorLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
@@ -78,5 +100,6 @@ footer {
     document.getElementById("vLink1").setAttribute("href", HTMLvalidatorLinkStr);
     document.getElementById("vLink2").setAttribute("href", CSSvalidatorLinkStr);
     </script>
+</div>
 </body>
 </html>

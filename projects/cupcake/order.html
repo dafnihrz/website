@@ -1,35 +1,164 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Cupcakes</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css"> 
+    <title>Cupcakes</title>
+<style>
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+  }
+h1{
+    text-align: center;
+}
+#container{
+    background-color: rgb(255, 198, 207);
+    border-radius: 1em;
+    padding: 20px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    line-height: 1.5;
+}
+form{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+form legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+}
+form label{
+    line-height: 2;
+}
+input[type=text]{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: 0;
+    resize: vertical;
+    border-bottom: 2px solid rgb(255, 198, 207);
+}
+ select{
+    padding: 12px 7px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ffffff;
+}
+button[type=submit]{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: unset;
+    letter-spacing: 1.5px;
+    background-color:rgb(255, 227, 232);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 1em;
+    transition: all ease-in-out 150ms;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
+    -webkit-appearance: none;
+}
+button[type=submit]:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.field{
+    padding: 40px;
+    background: rgb(255, 227, 232);
+    display: block;
+    text-align: left;
+    border-radius: 1em;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+footer a:hover{
+    opacity: 0.95;
+    color: rgb(255, 198, 207);
+    cursor: pointer;
+}
+footer>a, footer>a:visited {
+    text-decoration: none;
+    transition: all ease-in-out 150ms;
+    color: #555;
+}
+@media screen and (max-width: 900px) {
+    #container{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .field{
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    #pinfo label{
+        line-height: unset;
+    }
+    #pinfo input{
+        margin-bottom: 20px;
+    }
+}
+</style>
 </head>
 <body>
-
+    <div class="navbar" id="myTopnav">
+        <div class="topnav-left">
+          <a class="active" href="index.html">Home</a>
+        </div>
+        <div class="topnav">
+          <a href="order.html">Order</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
 <h1>Order</h1>
-<hr>
-<p>Craving cupcakes? Order here!</p>
+<div id="container">
 <form>
-<fieldset>
+<div id="pinfo" class="field">
 <legend>Order Info</legend>
-<label>First Name: <input type="text" name="fname" size="30"></label><br>
-<label>Last Name:  <input type="text" name="lname" size="30"></label>
-</fieldset>
-
-<fieldset>
+<label>First Name:</label>
+<input type="text" name="fname" size="30"><br>
+<label>Last Name:</label>
+<input type="text" name="lname" size="30">
+</div>
+<br>
+<div class="field">
 <legend>Make A Cupcake</legend>
 <label>Frosting:</label><br>
 <input type="radio" name="flavor" value="redvelvet"> Red Velvet<br>
 <input type="radio" name="flavor" value="vanilla"> Vanilla<br> 
 <input type="radio" name="flavor" value="chocolate"> Chocolate<br>
 <input type="radio" name="flavor" value="coconut"> Coconut<br>
+<br>
 <label>Toppings:</label><br>
 <input type="checkbox" name="sprinkles" value="1"> Sprinkles<br>
 <input type="checkbox" name="freshfruit" value="1"> Fresh Fruit<br>
 <input type="checkbox" name="chocolatechips" value="1"> Chocolate Chips<br>
 <input type="checkbox" name="coconutflakes" value="1"> Coconut Flakes<br>
 <input type="checkbox" name="hersheysyrup" value="1"> Hershey's Syrup<br>
+<br>
 <label>Size:</label><br>
 <select name="size">
 	<option>Small</option>
@@ -37,19 +166,19 @@
 	<option>Large</option>
 	<option>Jumbo</option>
 </select>
-<br>
+<br><br>
 <label>Quantity</label><br>
 <select  name="quantity">
 	<option>4</option>
 	<option>6</option>
 	<option>8</option>
 	<option>10</option>
-</select>
-</fieldset>
+</select><br>
+</div>
 <br>
 <button type="submit">Submit my order :)</button>
 </form>
-
+</div>
 <footer>
     <a id="vLink1"><strong> HTML </strong> Valid! </a> |
     <a href="index">Home</a> |
@@ -63,5 +192,6 @@
     document.getElementById("vLink1").setAttribute("href", HTMLvalidatorLinkStr);
     document.getElementById("vLink2").setAttribute("href", CSSvalidatorLinkStr);
     </script>
+    <script src="navbar.js"></script>
 </body>
 </html>

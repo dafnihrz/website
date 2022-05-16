@@ -44,11 +44,6 @@
   color:rgb(255, 198, 207);
   opacity: 1;
 }
-/*
-.navbar a:hover, .dropdown:hover, .dropbtn {
-  opacity: 0.3;
-  transition: all ease-in-out 250ms;
-}*/
 .navbar .icon {
   display: none;
 }

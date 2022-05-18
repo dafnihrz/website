@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+}
+a {
+    color: rgb(255, 198, 207);
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+footer a{
+    color: unset;
+    font-weight: unset;
+}
+footer a:hover{
+    opacity: 0.95;
+    color: rgb(255, 198, 207);
+    cursor: pointer;
+}
+footer>a, footer>a:visited {
+    text-decoration: none;
+    transition: all ease-in-out 150ms;
+    color: #555;
+}

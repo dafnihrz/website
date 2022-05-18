@@ -1,31 +1,78 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Cupcakes</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Cupcakes</title>
 <style>
-    footer {
-      text-align: center;
-  }
-  footer>a, footer>a:visited, footer a{
-      text-decoration: none;
-      color: #555;
-  }
+    article{
+        text-align: left;
+        margin-left: 35%;
+        margin-right: 5%;
+    }
+    img{
+        width: 10%;
+        margin-left: 17%;
+        height: auto;
+        float: left;
+    }
+    footer{
+        margin-top: 45px;
+        width: 100%;
+    }
+    @media screen and (max-width: 900px) {
+        img{
+            float: unset;
+            width: 20%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        article{
+        margin-left: 5%;
+        }
+    }
 </style>
 </head>
 <body>
-
+    <div class="navbar" id="myTopnav">
+        <div class="topnav-left">
+          <a class="active" href="index.html">Home</a>
+        </div>
+        <div class="topnav">
+          <a href="order.html">Order</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
 <h1>About</h1>
-<hr>
-<p>Hello!</p>
-<p> We make real celebrations taste better with premium, baked-fresh daily cupcakes :)</p>
-<p>Order and get a taste of heaven!</p>
+<img id="cupcake" src="https://www.georgetowncupcake.com/GetImage.ashx?maintainAspectRatio=true&maxHeight=160&maxWidth=500&Path=%7E%2FAssets%2FProductImages%2FCC_Vanilla_Squared.png">
+<article>
+    <p style="font-size: 40px;">Hello!</p>
+    <p style="line-height: 2.5;"> We make real celebrations taste better with premium, baked-fresh daily cupcakes :)<br>
+        But, you don’t just want a fanciful cupcake that looks pretty on the outside. 
+        You also want fresh, moist dessert made with the finest ingredients. Our cupcakes are baked fresh daily using 
+        100% pure ingredients and organic fruit preserves. We hand frost pretty and playful designs that are visually 
+        alluring. We hand select flavors that delight your taste buds and melt in your mouth, and we hand bake using 
+        natural ingredients for responsible indulgence.
+    </p>
+    <br>
+    <p><a href="order.html">Order</a> and get a taste of heaven!</p>
+</article>
+
 <footer>
-    <a id="vLink1"><strong> HTML </strong> Valid! </a> |
-    <a href="https://dafnihrz.github.io/website/projects/cupcake">Home</a> |
+    <a id="vLink1"><strong> HTML </strong> Valid! </a>|
     <a id="vLink2"><strong> CSS </strong> Valid! </a>
-    </footer>
+</footer>
     <script>
     var loc = window.location.href;
     var HTMLvalidatorLinkStr = 'http://validator.w3.org/check?uri=' + loc;
@@ -34,5 +81,6 @@
     document.getElementById("vLink1").setAttribute("href", HTMLvalidatorLinkStr);
     document.getElementById("vLink2").setAttribute("href", CSSvalidatorLinkStr);
     </script>
+    <script src="navbar.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css"> 
     <title>Cupcakes</title>
 <style>
-    article{
+    #container{
         text-align: left;
         margin-left: 35%;
         margin-right: 5%;
@@ -28,16 +28,20 @@
     footer{
         margin-top: 45px;
         width: 100%;
+        margin-left: 0%;
     }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 700px) {
         img{
             float: unset;
-            width: 20%;
+            width: 25%;
             margin-left: 5%;
             margin-right: 5%;
         }
-        article{
+        #container{
         margin-left: 5%;
+        }
+        footer{
+            margin-left: -5%;
         }
     }
 </style>
@@ -55,8 +59,8 @@
       </div>
     </div>
 <h1>About</h1>
-<img id="cupcake" src="https://www.georgetowncupcake.com/GetImage.ashx?maintainAspectRatio=true&maxHeight=160&maxWidth=500&Path=%7E%2FAssets%2FProductImages%2FCC_Vanilla_Squared.png">
-<article>
+<img id="cupcake" src="https://www.georgetowncupcake.com/GetImage.ashx?maintainAspectRatio=true&maxHeight=160&maxWidth=500&Path=%7E%2FAssets%2FProductImages%2FCC_Vanilla_Squared.png" alt="Vanilla Cupcake">
+<div id="container">
     <p style="font-size: 40px;">Hello!</p>
     <p style="line-height: 2.5;"> We make real celebrations taste better with premium, baked-fresh daily cupcakes :)<br>
         But, you don’t just want a fanciful cupcake that looks pretty on the outside. 
@@ -67,7 +71,7 @@
     </p>
     <br>
     <p><a href="order.html">Order</a> and get a taste of heaven!</p>
-</article>
+</div>
 
 <footer>
     <a id="vLink1"><strong> HTML </strong> Valid! </a>|

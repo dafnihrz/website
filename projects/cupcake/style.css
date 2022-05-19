@@ -24,7 +24,7 @@ footer a:hover{
     color: rgb(255, 198, 207);
     cursor: pointer;
 }
-footer>a, footer>a:visited {
+footer a, footer a:visited {
     text-decoration: none;
     transition: all ease-in-out 150ms;
     color: #555;
